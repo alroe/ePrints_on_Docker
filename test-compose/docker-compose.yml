@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    test: 
+        build: ./test
+        volumes: 
+         - ./test/src:/var/www/html
+        ports:
+         - 8080:80
